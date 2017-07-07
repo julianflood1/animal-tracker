@@ -38,13 +38,13 @@ export class AppComponent {
       this.selectedAnimal = clickedAnimal;
     }
 
-  finishedEditing() {
-    this.selectedAnimal = null;
-  }
+    finishedEditing() {
+      this.selectedAnimal = null;
+    }
 
-  addAnimal(newAnimalFromChild: Animal) {
-    this.masterAnimalList.push(newAnimalFromChild);
-  }
+    addAnimal(newAnimalFromChild: Animal) {
+      this.masterAnimalList.push(newAnimalFromChild);
+    }
 
 
 }
