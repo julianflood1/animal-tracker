@@ -10,6 +10,9 @@ This is a website that I made which allows a user to add animals to a list showi
 
 https://github.com/julianflood1/animal-tracker/
 
+![screenshot](https://user-images.githubusercontent.com/24885660/27980344-93bb92b8-6332-11e7-9f52-86d09a4f15a8.jpg)
+
+
 ## Required Features
 
 + User is able to add newly-admitted animal to list.
