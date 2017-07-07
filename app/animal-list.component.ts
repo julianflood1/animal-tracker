@@ -4,8 +4,14 @@ import { Animal } from './animal.model';
 @Component({
   selector: 'animal-list',
   template: `
+  <select (change)="onChange($event.target.value)">
+    <option value="allAnimals" selected="selected">All Animals</option>
+    <option value="youngAnimals">Animals 2 or Under</option>
+    <option value="oldAnimals">Animals Older than 2</option>
+  </select>
+
   <ul>
-    <li [class]="ageColor(currentAnimal)" *ngFor="let currentAnimal of childAnimalList">
+    <li [class]="ageColor(currentAnimal)" *ngFor="let currentAnimal of childAnimalList | ageSort:filterByAge">
     <div class="card">
       <h2>{{currentAnimal.species}}</h2>
       <p><strong>Name:</strong> {{currentAnimal.name}}</p>
@@ -24,6 +30,12 @@ import { Animal } from './animal.model';
 export class AnimalListComponent {
   @Input() childAnimalList: Animal[];
   @Output() clickSender = new EventEmitter();
+
+  onChange(optionFromMenu) {
+    this.filterByAge = optionFromMenu;
+  }
+
+  filterByAge: string = "allAnimals";
 
   editButtonHasBeenClicked(animalToEdit: Animal) {
     this.clickSender.emit(animalToEdit);
