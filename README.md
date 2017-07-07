@@ -25,11 +25,11 @@ This is a website that I made which allows a user to add animals to a list showi
 
 ## Setup/Installation Requirements
 
-* _Clone the repository_
-  _install npm_
-  _install Bower_
-  _Gulp Build_
-  _Gulp Serve_
++ Clone the repository
++ Install npm
++ Install Bower
++ Gulp Build
++ Gulp Serve
 
 
 ## Known Bugs
