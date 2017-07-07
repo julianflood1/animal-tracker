@@ -8,7 +8,7 @@
 
 This is a website that I made which allows a user to add animals to a list showing properties about the animal, and then the user can edit and sort the animals.
 
-![alt text]https://github.com/julianflood1/animal-tracker/resources/images/screenshot.jpg
+![alt text]https://github.com/julianflood1/animal-tracker/screenshot.jpg
 
 ## Required Features
 
