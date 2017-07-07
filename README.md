@@ -10,12 +10,12 @@ _This is a website that I made which allows a user to add animals to a list show
 
 ![alt text]https://github.com/julianflood1/animal-tracker/resources/images/screenshot.jpg
 
-## Required Features
+## Required Features ##
 
-_1. User is able to add newly-admitted animal to list._
-_2. User will be able to view listed animal features after inputted._
-_3. User will be able to edit characteristics of animal after inputted._
-_4. User will be able to sort animals based on age._
++ User is able to add newly-admitted animal to list.
++ User will be able to view listed animal features after inputted.
++ User will be able to edit characteristics of animal after inputted.
++ User will be able to sort animals based on age.
 
 ## Future features
 
