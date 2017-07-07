@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Animal } from './animal.model';
 
 
 @Component({
@@ -7,11 +8,11 @@ import { Component } from '@angular/core';
   <div class="container">
     <h1>Animal Tracker</h1>
     <h3>These animals are currently in the zoo!</h3>
-    <ul>
-      <li [class]="ageColor(currentAnimal)" *ngFor="let currentAnimal of animals">{{currentAnimal.species}} <button (click)="editAnimal(currentAnimal)">Edit Animal</button></li>
-    </ul>
+
+    <animal-list [childAnimalList]="masterAnimalList" (clickSender)="editAnimal($event)"></animal-list>
+
     <hr>
-    <div *ngIf="selectedAnimal"> 
+    <div *ngIf="selectedAnimal">
       <h3>{{selectedAnimal.species}}</h3>
       <p>Animal age: {{selectedAnimal.age}}</p>
       <h3>Edit Animal</h3>
@@ -27,11 +28,13 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
 
-  animals: Animal[] = [
+  selectedAnimal = null;
+
+  masterAnimalList: Animal[] = [
     new Animal('Giant Panda', 3),
     new Animal('Gray Wolf', 5),
     new Animal('Jaguar', 7) ];
-  selectedAnimal = null;
+
 
   finishedEditing() {
     this.selectedAnimal = null;
@@ -41,18 +44,4 @@ export class AppComponent {
     this.selectedAnimal = clickedAnimal;
   }
 
-  ageColor(currentAnimal){
-    if (currentAnimal.age <= 4){
-      return "bg-info";
-    } else if (currentAnimal.age === 5) {
-      return "bg-warning";
-    } else {
-      return "bg-danger";
-    }
-  }
-
-}
-
-export class Animal {
-  constructor(public species: string, public age: number) { }
 }
