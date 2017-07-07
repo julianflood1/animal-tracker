@@ -23,9 +23,9 @@ export class AppComponent {
   selectedAnimal = null;
 
   masterAnimalList: Animal[] = [
-    new Animal('Giant Panda', 3),
-    new Animal('Gray Wolf', 5),
-    new Animal('Jaguar', 7) ];
+    new Animal('Giant Panda', 'Ping-Pong', 3, 'Herbivore', 'Bamboo Forest', 3, 'Female', 'Laying down', 'Fast movements' ),
+    new Animal('Gray Wolf', 'Fang', 5, 'Carnivore', 'Northern Trail', 1, 'Male', 'Running fast', 'Hot weather'),
+    new Animal('Jaguar', 'Patrick', 7, 'Carnivore', 'Pond Area', 5, 'Male', 'Stalking prey', 'Cold weather') ];
 
     editAnimal(clickedAnimal) {
       this.selectedAnimal = clickedAnimal;
