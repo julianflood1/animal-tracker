@@ -29,8 +29,8 @@ https://github.com/julianflood1/animal-tracker/
 ## Setup/Installation Requirements
 
 + Clone the repository
-+ Install npm
-+ Install Bower
++ Run <code>npm install</code>
++ Run <code>bower install</code>
 + Gulp Build
 + Gulp Serve
 
