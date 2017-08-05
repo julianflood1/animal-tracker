@@ -6,7 +6,7 @@
 
 ## Description
 
-This is a website that I made which allows a user to add animals to a list showing properties about the animal, and then the user can edit and sort the animals.
+This is a kid-themed website that I made which allows a user to add animals to a list showing properties about the animal, and then the user can edit and sort the animals.
 
 https://github.com/julianflood1/animal-tracker/
 
